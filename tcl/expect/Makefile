@@ -19,4 +19,4 @@ INSTALL_SCRIPTS = $(WORKSRC)/Makefile
 
 include ../category.mk
 
-CONFIGURE_ARGS = $(DIRPATHS) --with-tclinclude=$(ROOTDIR)/tcl/work/tcl8.4.1/generic --with-tcl=$(ROOTDIR)/tcl/work/tcl8.4.1/unix
+CONFIGURE_ARGS = $(DIRPATHS) --with-tclinclude=$(ROOTDIR)/tcl/work/tcl8.4.3/generic --with-tcl=$(ROOTDIR)/tcl/work/tcl8.4.3/unix

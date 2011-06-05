@@ -18,7 +18,7 @@ FILE_SITES = file://../../distfiles/
 # 
 # TODO: set $(SYSCONFDIR) and $(LOCALSTATEDIR) to never use
 # /usr/etc or /usr/var
-prefix ?= $(HOME)/bin/tcl
+prefix ?= $(HOME)/bin/tcl8.4.0
 BUILD_PREFIX ?= $(prefix)
 exec_prefix ?= $(prefix)
 bindir ?= $(exec_prefix)/bin

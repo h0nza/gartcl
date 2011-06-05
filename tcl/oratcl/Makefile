@@ -1,12 +1,12 @@
 GARNAME = oratcl
-GARVERSION = 40
+GARVERSION = 41
 CATEGORIES = tcl
 DISTNAME = oratcl$(GARVERSION)
 MASTER_SITES = http://telia.dl.sourceforge.net/sourceforge/oratcl/
 DISTFILES = $(DISTNAME).tar.gz
-WORKSRC = $(WORKDIR)/oratcl-4-0-branch
+WORKSRC = $(WORKDIR)/oratcl-4-1-branch
 
-LIBDEPS = 
+LIBDEPS = tcl/tcl
 
 DESCRIPTION = oratcl
 define BLURB
@@ -17,7 +17,7 @@ CONFIGURE_SCRIPTS = $(WORKSRC)/configure
 BUILD_SCRIPTS = $(WORKSRC)/Makefile
 INSTALL_SCRIPTS = $(WORKSRC)/Makefile
 
-CONFIGURE_ARGS = $(DIRPATHS)
+CONFIGURE_ARGS = $(DIRPATHS) --enable-stubs
 
 include ../category.mk
 

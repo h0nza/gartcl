@@ -1,5 +1,5 @@
 GARNAME = tDOM
-GARVERSION = 0.7.5
+GARVERSION = 0.7.8
 CATEGORIES = tcl
 MASTER_SITES = http://sdf.lonestar.org/~loewerj/tdom.cgi?/
 MASTER_SITES = http://loewerj.freeshell.org/dd/

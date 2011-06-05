@@ -1,5 +1,5 @@
 GARNAME = tablelist
-GARVERSION = 3.0
+GARVERSION = 3.2
 CATEGORIES = tcl
 MASTER_SITES = http://home.t-online.de/home/csaba.nemethi/tablelist/
 DISTNAME = $(GARNAME)$(GARVERSION)

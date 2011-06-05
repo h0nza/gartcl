@@ -1,5 +1,5 @@
 GARNAME = tk
-GARVERSION = 8.4.1
+GARVERSION = 8.4.3
 CATEGORIES = tcl
 DISTNAME = tk$(GARVERSION)
 MASTER_SITES = http://telia.dl.sourceforge.net/sourceforge/tcl/
@@ -16,7 +16,8 @@ CONFIGURE_SCRIPTS = $(WORKSRC)/unix/configure
 BUILD_SCRIPTS = $(WORKSRC)/unix/Makefile
 INSTALL_SCRIPTS = $(WORKSRC)/unix/Makefile
 
-CONFIGURE_ARGS = $(DIRPATHS) 
+#CONFIGURE_ARGS = $(DIRPATHS) 
+CONFIGURE_ARGS = $(DIRPATHS) --enable-xft
 
 include ../category.mk
 

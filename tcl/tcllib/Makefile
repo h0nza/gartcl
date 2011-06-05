@@ -1,5 +1,5 @@
 GARNAME = tcllib
-GARVERSION = 1.3
+GARVERSION = 1.4
 CATEGORIES = tcl
 MASTER_SITES = http://telia.dl.sourceforge.net/sourceforge/tcllib/
 DISTFILES = $(DISTNAME).tar.gz
