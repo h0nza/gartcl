@@ -1,0 +1,17 @@
+#!/bin/sh
+
+DIRS=$(find -name Makefile | grep -v '/.*/.*/.*/' | xargs -n1 dirname)
+
+if [ "$1" = "show" ]
+then
+	echo $DIRS | tr ' ' '\n'; exit 0
+fi
+
+for target in $@
+do
+	for d in $DIRS
+	do
+		echo Making $target in $d...
+		make -C $d $target # || break
+	done
+done

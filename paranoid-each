@@ -1,0 +1,12 @@
+#!/bin/sh
+
+DIRS=$(find -name Makefile | grep -v '/.*/.*/.*/' | xargs -n1 dirname)
+
+for target in $@
+do
+	for d in $DIRS
+	do
+		echo Making $target in $d...
+		make -C $d $target || exit 1
+	done
+done
