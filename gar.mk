@@ -56,7 +56,13 @@ all: build
 #################### DIRECTORY MAKERS ####################
 
 # This is to make dirs as needed by the base rules
-$(sort $(DOWNLOADDIR) $(COOKIEDIR) $(WORKSRC) $(WORKDIR) $(EXTRACTDIR) $(FILEDIR) $(SCRATCHDIR)) $(COOKIEDIR)/%:
+$(sort $(DOWNLOADDIR) $(COOKIEDIR) $(WORKSRC) $(WORKDIR) $(EXTRACTDIR) $(FILEDIR) $(SCRATCHDIR)) :
+	@if test -d $@; then : ; else \
+		mkdir -p $@; \
+		echo "mkdir $@"; \
+	fi
+
+$(COOKIEDIR)/%:
 	@if test -d $@; then : ; else \
 		mkdir -p $@; \
 		echo "mkdir $@"; \
